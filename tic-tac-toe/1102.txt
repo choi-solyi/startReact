@@ -1,0 +1,83 @@
+
+hook 이전 
+class컴포넌트, 라이프사이클 유무에 따라 class, function 사용
+
+hook 이후
+class, function
+
+
+뭐 되는게 없어서 못해먹겠다
+ch3으로 이동
+
+
+---------------- CH3
+https://create-react-app.dev/
+
+@ CRA 사용해서 리액트 프로젝트 생성
+npx create-react-app tic-tac-toe
+
+@개발 모드 실행
+npm start
+@프로덕션 모드
+npm run build -> (npx) serve -s build 
+@테스트 모드 : test code 실행
+npm test
+@eject  - CRA를 제거하는것. 되돌릴수없다. CRA로 해결이 안되는 경우에 제거
+npm eject
+
+
+@ESLint
+ 내부적으로 코딩 스타일을 규정하는것
+ 프로젝트 생성 후
+npm init -y
+npm i eslint -D
+npx eslint --init (설정)
+npx eslint index.js  파일검사
+
+@Prettier : 코드 포매터 
+npm i perttier -D
+npx prettier index.js
+  ->  console.log('hello')		-> console.log("hello");
+npx prettier index.js --write 	(js파일이 바뀜)
+default format => prettier
+.prettierrc.json 에서 상세 설정가능 singleQuote, semi
+
+@husky :
+npm init -y
+git init 
+git i husky -D
+npx husky install (git hook  설치= 활성화)
+
+package.json/script부분에 "parepare": "husky install", 추가
+npx husky add .husky/pre-commit "npm test"
+commit 전에 모든 코드 에러를 한번 더 확인 할 수 있음
+
+@lint-staged : 
+npm i lint-staged -D
+npx husky add .husky/pre-commit "npx lint-staged"
+npm i prettier -D
+
+package.json 에 아래 추가
+  "lint-staged": {
+    "**/*.js": [
+      "eslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+
+
+error: 'tic-tac-toe/' does not have a commit checked out
+fatal: adding files failed
+
+
+크롬 react develover tools 추가
+컴포넌트 별로 볼수있고 props줄수있고 status 등 디버깅 좋은 툴
+프로파일러 
+
+
+
+
+시작점 : src/index.js + publid/index.html + App.js + index.css
+
+
+web.xml 상단에 2.5 => 3.0
