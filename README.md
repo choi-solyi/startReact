@@ -37,6 +37,39 @@ $ npm eject
 
 ## 플러그인 설치
 
+- ESlint : 내부적으로 코딩 스타일을 규정하는것
+
+```git
+$ npm i eslint -D
+$ npx eslint --init (설정)
+$ npx eslint index.js (파일검사)
+```
+
+- Prettier : 코드 포매터
+
+```git
+$ npm i perttier -D
+$ npx prettier index.js
+$ npx prettier index.js --write
+```
+
+- husky
+
+```git
+$ npm init -y
+$ git init
+$ git i husky -D
+$ npx husky install
+```
+
+- lint-staged
+
+```git
+$ npm i lint-staged -D
+$ npx husky add .husky/pre-commit "npx lint-staged"
+$ npm i prettier -D
+```
+
 - SASS
 
 ```git
