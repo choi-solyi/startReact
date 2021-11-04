@@ -69,11 +69,3 @@ isLoign에 값이 true 라면 바로 메인 페이지로 이동하고,
 아니라면 Login 페이지로 이동하게 한다.
 
 --------------------
-@스타일로더
- $ npx create-react-app style-loaders-example
- $ npm run eject
-@CSS, SASS
-@CSS Module, SASS module
-@Styled-components
-@react Shadow
-@Ant Design

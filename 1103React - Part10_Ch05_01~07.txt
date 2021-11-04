@@ -1,0 +1,121 @@
+
+@스타일로더
+ $ npx create-react-app style-loaders-example
+ $ npm run eject
+webpack.config.js 에서 css, sass, scss에 대한 내용을 확인할수있다.
+네이밍 방법론 BEM : http://getbem.com/
+
+
+@CSS, SASS
+css 파일 scss 방식으로 변경.
+ $ npm i sass
+
+@CSS Module, SASS module
+// ./App.module.css
+기존 css파일 내용 복붙
+
+// App.js
+import styles from "./App.module.css";
+class 부분에 className = {styles.header}
+혹은
+className = {styles["header"]} 와 같이 이름을 지정해준다.
+하지만 이 방법을 사용할 경우 삼항연산자로 클래스 네임을 주는 단순한 코드도
+ <button
+        onClick={this.startLoading}
+        className={
+          this.state.loading
+            ? `${styles["button"]} ${styles.loading}`
+            : `${styles["button"]}`
+        }
+        {...this.props}
+      />
+
+위와같이 길고 복잡해지게 된다.
+그래서 사용하는게  classNames
+ $ npm i classnames
+ ? `${styles["button"]} ${styles.loading}`  
+>> classNames(styles.button, styles.loading)
+
+
+@Styled-components
+CRA가 아닌 방법
+ $ npx create-react-app styled-components-example
+ $ npm i styled-components
+ $ npm start
+
+
+1. 
+Styled를 임포트 해서
+const StyledButton = styled.button`
+  (이곳에 css설정을 입력)
+`;
+후 App.js에서 StyledButton 을 import 해서 사용할수있음
+<StyledButton> 버튼 1</ ..>
+
+2.
+//App.js
+<StyledButton  primary>버튼2 </  ... >처럼 primary를 지정해주고
+StyleButton.jsx에서 ${(props) => `(css내용)`}
+
+3. 
+// App.js
+const PrimaryStyledButton = styled(StyledButton)`(css내용)`
+<PrimaryStyledButton>버튼3</PrimaryStyledButton
+이와같이 버튼을 생성해줄수도 있다
+
+
+4. 
+// App.js
+props를 사용해서 추가 가능
+const UppercaseButton = (props) => (
+  <button {...props} children={props.children.toUpperCase()} />
+);
+
+ <StyledButton as={UppercaseButton}>버튼</StyledButton>
+
+5.
+ 
+const MyButton = (props) => (
+  <button className={props.className} children={`MyButton ${props.children}`} />
+);
+const StyledMyButton = styled(MyButton)`
+ (css내용)
+  color: ${(props) => props.color || "palevioletred"};		
+//props.color가 있으면 출력, 없으면 palevioletred로 출력
+`;
+<StyledMyButton>button 5</StyledMyButton>		
+>> MyButton button 5로 출력
+css
+
+전역적으로 스타일 설정이 어려움
+
+
+6. global 스타일
+createGlobalStyle
+const GlobalStyle = createGlobalStyle`
+button {
+  color: yellow !important;
+}
+`;
+
+<div className="App"> 의 다음라인에 바로
+<GlobalStyle />
+
+7. 속성 주기
+
+const StyledA = styled.a.attrs((props) => ({
+  target: "_BLANK", //attribute 미리 설정해줄수있음
+}))`
+  (css 내용)
+`;
+
+<StyledA href="https://google.com">태그</StyledA>
+이렇게 설정해주면
+<StyledA href="https://google.com" target: "_BLANK">태그</StyledA> 이 코드와 같아진다.
+매번 target 속성을 부여하지않아도 공통으로 처리 OK
+
+
+@react Shadow
+
+
+@Ant Design
