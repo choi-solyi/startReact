@@ -1,0 +1,30 @@
+Part5 Ch5
+Part10 Ch6
+
+
+1105
+리액트 실전 활용법
+
+@HOC Higher order Component 
+- 고착 컴포넌트
+- 최근엔 Hook이 나와서 빈도가 좀 줄어들었음
+- 컴포넌트 로직을 재사용
+
+HOC = 컴포넌트를 인사로 받아서 새로운 컴포넌트로 반환해주는 함수
+
+props > [ 컴포넌트 ] > UI
+컴포넌트 > HOC > 새로운 컴포넌트
+
+
+Fragment Container
+withRouter 에서 이미 학습한적있음.
+with 가 붙은 함수가 HOC 인 경우가 많다.
+
+@ controllerd component
+$ npx create-react-app controlled-uncontrolled-example
+
+상태를 가지고 있는 elements
+컨트롤드 = 엘리먼트를 가지고 있는 컴포넌트가 관리
+언 컨트롤드 = 엘리먼트의 상태 관리 X 참조만할때
+
+uncontrolled 컴포넌트 방식은 리액트에서는 "지양"하는 방식이다
