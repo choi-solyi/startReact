@@ -1,7 +1,12 @@
-export default function Profile(props) {
-  console.log("Props: ", props);
-  const id = props.match.params.id;
-  console.log("id: ", id); // string 타입
+import { useParams } from "react-router";
+
+export default function Profile() {
+  // console.log("Props: ", props);
+  // const id = props.match.params.id;
+  // console.log("id: ", id); // string 타입
+
+  const params = useParams();
+  const id = params.id;
 
   return (
     <div>

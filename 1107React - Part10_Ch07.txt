@@ -1,0 +1,87 @@
+Hook & Context
+
+Basic hooks
+useState
+useEffect
+
+$ npx create-react-app react-hooks-example
+
+@useState : state를 대체할수있다.
+@useEffect : 라이프 사이클 훅을 대체 할 수 있다.
+
+useHasMounted    //HOOK
+vs
+withHaxMounted   //HOC 방식
+
+
+(11.7 여기까지) 
+(11.15 이어서 작성)
+@ Additinal Hooks
+
+추가제공하는 훅 ( useReducer , )
+
+@ useReducer : Example6.jsx
+- 다수의 하윗값을 포함하는 복잡한 정적 로직을 만들경우
+- 다음 state가 이전 state에 의존적인 경우
+- Redux를 안다면 쉽게 사용 가능
+
+@ useMemo : Example7.jsx
+@ useCallback : Example7.jsx
+
+@ createRef  : Example8.jsx 
+ 항상 레퍼런스를 생성해서 렌더 될때 넣어준다.
+
+@ useRef  :  Example8.jsx 
+렌더 사이에도 유지해준다. 
+
+
+Hooks 4가지
+@ useHistory (자주)
+@ useLocation
+@ useParams (자주)
+@ useRouteMatch
+
+@ useHistory 
+React-router-example / components / loginButton.jsx
+기존 : props 를 인자로 받아와서 props.history에 url을 push 해주어야했는데
+신규 : useHistory를 사용하면 history 에 바로 push 해줄수있음!
+
+@ useParams 
+
+React-router-example / pages / Profile.jsx
+기존 : props를 인자로 받아와서 props.match.params.id
+신규 : useParams를 사용해서 params.id 
+
+
+@ Component 간 통신
+$ npx react-create-app component-communication
+
+1. 하위 컴포넌트 변경하기 (A의 버튼을 눌러서 E에 있는 값 변경)
+A의 값을 B,C,D를 거쳐서 E에서 출력하기
+
+
+2. 상위 컴포넌트를 변경하기 (E의 버튼을 눌러 A에 있는 값 변경)
+- A에 함수를 만들고, 그 함수 안에 state를 만들어서 변경하도록 구현 > 그 변경으로 인해 p안의 내용을 변경
+- 만들어진 함수를 props에 넣어서 B , B의 props를 C , ... E까지 넘기고 E에서 클릭시 props로 받은 함수를 실행한다
+
+위의 문제를 해결하기위해 
+@ Context API 의  useContext 를 사용
+$ npx create-react-app react-context-example
+
+1. 하위컴포넌트 전체에 데이터를 공유하는 방법!!!!!
+데이터를 set하는 놈 = 가장 상위 컴포넌트 => provider
+데이터를 get하는 놈 = 모든 하위 컴포넌트에서 접근 가능
+ => 1) 컨슈머
+      2) 클래스 컴포넌트의 this.context 
+      3) 펑셔널 컴포넌트의 useContext
+
+ 1) consumer 사용 해서 GET 
+react-context-example / src / components / Example1.jsx
+
+ 2) class 컴포넌트에서 GET (비선호)
+react-context-example / src / components / Example2.jsx
+
+ 3) functional 컴포넌트에서 GET (선호되는 방식)
+react-context-example / src / components / Example3.jsx
+
+

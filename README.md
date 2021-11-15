@@ -143,3 +143,31 @@ $ npm i --save @ant-design/icons
       - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-shadow-example)
     - Ant Design : https://ant.design/
       - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/antd-example)
+
+- 2021년 11월 5일 금요일
+
+  - Part10_Ch6. 리액트 실전활용
+
+    - High order Component
+    - Controlled Component & unControlled Component
+    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/controlled-uncontrolled-example)
+
+- 2021년 11월 7일 일요일
+
+  - Part10_Ch7. ~03 Hooks & Context
+
+    - Basic Hooks
+    - Custom Hooks
+    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-hooks-example)
+
+- 2021년 11월 15일 월요일
+
+  - Part10_Ch7. 04~07 Hooks & Context
+
+    - Custom & Additional Hooks
+    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-hooks-example)
+    - React Router Hooks
+    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-router-example)
+    - 컴포넌트간 통신 (데이터 주고받기)
+    - Context API
+    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-context-example)
