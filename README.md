@@ -74,6 +74,9 @@
   - Part10_Ch8. 03 testing library React
   - Part10_Ch9. 01 Optimizing Performance
     - 불필요한 렌더 지우는 방법
+  - Part10_Ch9. 02 createPortal
+  - Part10_Ch9. 03 forwardRef
+    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-advanced)
 
 ## React 신규 프로젝트 생성
 
