@@ -1,0 +1,54 @@
+
+@ unit test
+통합테스트 전 ..
+장인이 되려면 TDD! 
+
+https://jestjs.io/
+mkdir jest-example
+cd jest-example
+npm init -y
+npm i jest -D
+
+npm test 
+https://jestjs.io/ja/docs/expect
+
+
+// A가 B와 같은지 비교
+expect( A ).toBe( B )
+// 객체 비교
+expect( A ).toEqual( B )
+// toHaveLength :
+
+npx jest --watchAll
+
+
+toBe
+toEqual
+toHaveLength
+toHaveProperty
+toBeDefined
+toBeFalsy
+toBeGreaterThan
+toBeGreaterThanOrEqual
+toBeInstanceOf
+
+.not.to~ 
+
+async test 
+1 ) done() 최초의 방식
+2 ) promise 2가지 
+3 ) async 키워드 사용 (가장 좋은 방식)
+
+ $ npx create-react-app react-component-test
+
+$ npm test 
+
+test 파일 ? 
+~.test.js
+app.spec.js
+__tests__ 라는 폴더 내부
+
+--
+11월 16일 화요일
+
+AAA패턴 - Arrange Act Assert
