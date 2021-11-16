@@ -73,7 +73,7 @@
 
   - Part10_Ch8. 03 testing library React
   - Part10_Ch9. 01 Optimizing Performance
-    - 불필요한 렌더 지우기
+    - 불필요한 렌더 지우는 방법
 
 ## React 신규 프로젝트 생성
 
