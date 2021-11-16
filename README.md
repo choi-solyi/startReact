@@ -1,5 +1,80 @@
 # React
 
+## 학습일자 및 내용
+
+- 2021년 11월 1일 월요일
+
+  - Part10_Ch1.react 개념 및 라이브러리
+
+- 2021년 11월 2일 화요일
+
+  - Part10_Ch3. 리액트 프로젝트 시작
+
+- 2021년 11월 3일 수요일
+
+  - Part10_Ch4. React Router
+    - exact
+    - /about:name 처럼 param 경로로 이동하는 방법과 query-string을 사용해서 동하는 방법
+    - Not Found 페이지
+    - Link
+    - NavLink
+    - JS로 라우팅 이동하기
+      1. HOC (withRouter)
+      1. Hook
+    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-router-example)
+
+- 2021년 11월 4일 목요일
+
+  - Part10_Ch5. React Compnent Styling
+
+    - Style Loader
+      - BEM : http://getbem.com/
+      - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/style-loaders-example)
+    - CSS Module, SASS Module
+    - Styled Component 1, 2
+      - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/styled-components-example)
+    - React Shadow
+      - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-shadow-example)
+    - Ant Design : https://ant.design/
+      - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/antd-example)
+
+- 2021년 11월 5일 금요일
+
+  - Part10_Ch6. 리액트 실전활용
+
+    - High order Component
+    - Controlled Component & unControlled Component
+    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/controlled-uncontrolled-example)
+
+- 2021년 11월 7일 일요일
+
+  - Part10_Ch7. ~03 Hooks & Context
+
+    - Basic Hooks
+    - Custom Hooks
+    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-hooks-example)
+
+- 2021년 11월 15일 월요일
+
+  - Part10_Ch7. 04~07 Hooks & Context
+
+    - Custom & Additional Hooks
+    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-hooks-example)
+    - React Router Hooks
+    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-router-example)
+    - 컴포넌트간 통신 (데이터 주고받기)
+    - Context API
+    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-context-example)
+
+  - Part10_Ch8. 01~02 Unit Test
+    - Unit Test (jestjs.io)
+
+- 2021년 11월 16일 화요일
+
+  - Part10_Ch8. 03 testing library React
+  - Part10_Ch9. 01 Optimizing Performance
+    - 불필요한 렌더 지우기
+
 ## React 신규 프로젝트 생성
 
 - 신규 프로젝트 설치
@@ -105,70 +180,3 @@ $ npm i antd
 ```git
 $ npm i --save @ant-design/icons
 ```
-
-## 학습일자 및 내용
-
-- 2021년 11월 1일 월요일
-
-  - Part10_Ch1.react 개념 및 라이브러리
-
-- 2021년 11월 2일 화요일
-
-  - Part10_Ch3. 리액트 프로젝트 시작
-
-- 2021년 11월 3일 수요일
-
-  - Part10_Ch4. React Router
-    - exact
-    - /about:name 처럼 param 경로로 이동하는 방법과 query-string을 사용해서 동하는 방법
-    - Not Found 페이지
-    - Link
-    - NavLink
-    - JS로 라우팅 이동하기
-      1. HOC (withRouter)
-      1. Hook
-    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-router-example)
-
-- 2021년 11월 4일 목요일
-
-  - Part10_Ch5. React Compnent Styling
-
-    - Style Loader
-      - BEM : http://getbem.com/
-      - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/style-loaders-example)
-    - CSS Module, SASS Module
-    - Styled Component 1, 2
-      - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/styled-components-example)
-    - React Shadow
-      - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-shadow-example)
-    - Ant Design : https://ant.design/
-      - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/antd-example)
-
-- 2021년 11월 5일 금요일
-
-  - Part10_Ch6. 리액트 실전활용
-
-    - High order Component
-    - Controlled Component & unControlled Component
-    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/controlled-uncontrolled-example)
-
-- 2021년 11월 7일 일요일
-
-  - Part10_Ch7. ~03 Hooks & Context
-
-    - Basic Hooks
-    - Custom Hooks
-    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-hooks-example)
-
-- 2021년 11월 15일 월요일
-
-  - Part10_Ch7. 04~07 Hooks & Context
-
-    - Custom & Additional Hooks
-    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-hooks-example)
-    - React Router Hooks
-    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-router-example)
-    - 컴포넌트간 통신 (데이터 주고받기)
-    - Context API
-    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-context-example)
-    - Unit Test (jestjs.io)
