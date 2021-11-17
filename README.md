@@ -78,6 +78,12 @@
   - Part10_Ch9. 03 forwardRef
     - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/react-advanced)
 
+- 2021년 11월 17일 수요일
+
+  - Part10_Ch10. 간이 쇼핑몰
+    - 리스트, 카트 담기 (금액계산), 카트 비우기
+    - [Github에서 확인하기](https://github.com/choi-solyi/startReact/tree/master/prototype-shop)
+
 ## React 신규 프로젝트 생성
 
 - 신규 프로젝트 설치
